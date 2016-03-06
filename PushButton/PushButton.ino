@@ -8,12 +8,11 @@
  *
  * Created 1 December 2005
  * copyleft 2005 DojoDave <http://www.0j0.org>
- * http://arduino.berlios.de
  *
  */
 
-int ledPin = 8; // choose the pin for the LED
-int inPin = 1;   // choose the input pin (for a pushbutton)
+int ledPin = 8;  // choose the pin for the LED
+int inPin = 2;   // choose the input pin (for a pushbutton)
 int val = 0;     // variable for reading the pin status
 
 void setup() {
@@ -22,10 +21,11 @@ void setup() {
 }
 
 void loop(){
-  val = digitalRead(inPin);  // read input value
-  if (val == HIGH) {         // check if the input is HIGH (button released)
+  val = digitalRead(inPin);     // read input value
+  if (val == HIGH) {            // check if the input is HIGH (button released)
     digitalWrite(ledPin, LOW);  // turn LED OFF
   } else {
-    digitalWrite(ledPin, HIGH);  // turn LED ON
+    digitalWrite(ledPin, HIGH); // turn LED ON
   }
 }
+
