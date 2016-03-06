@@ -1,0 +1,25 @@
+
+# see more at https://github.com/hybridgroup/artoo-arduino
+
+# to install gort, follow the instructions on http://gort.io/
+
+#01
+$ gem install artoo-arduino
+
+#02
+# with arduino plugged
+$ gort scan serial
+
+#03
+$gort arduino install
+
+#04
+$gort arduino upload firmata /dev/ttyACM0
+
+#05
+# create a file with:
+# require 'artoo'
+# connection :arduino, adaptor: :firmata, port: '/dev/tty*' # with the port listed on step #02
+
+#06
+# execute the file. Ex: ruby blink.rb
