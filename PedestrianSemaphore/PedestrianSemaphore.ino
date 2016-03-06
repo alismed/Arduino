@@ -49,9 +49,9 @@ void changeLights() {
 
   // pisca o verde dos pedestres
   for (int x = 0; x < 10; x++) {
-    digitalWrite(pedGreen, HIGH);
-    delay(125);
     digitalWrite(pedGreen, LOW);
+    delay(125);
+    digitalWrite(pedGreen, HIGH);
     delay(125);
   }
 
