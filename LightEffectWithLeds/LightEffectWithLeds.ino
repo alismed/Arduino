@@ -1,6 +1,6 @@
-byte ledPin[] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13};  // cria um array para os pinos dos LEDs
-int ledDelay(50);                                    // intervalo entre as alterações
-int direction = 1;                                   // relacao com o indice do array
+byte ledPin[10] = {4, 5, 6, 7, 8, 9, 10, 11, 12, 13}; // cria um array para os pinos dos LEDs
+int ledDelay(50);                                     // intervalo entre as alterações
+boolean direction = true;                             // relacao com o indice do array
 int currentLED = 0;
 unsigned long changeTime;
 
@@ -29,14 +29,14 @@ void changeLED() {
   // acende o LED atual
   digitalWrite(ledPin[currentLED], HIGH);
   // incrementa de acordo com o valor da direcao
-  currentLED += direction;
-  
+  currentLED += (direction == true) ? 1 : -1;
+
   // altera a direcao se atingir o fim
   if (currentLED == 9) {
-    direction = -1;
+    direction = false;
   }
   if (currentLED == 0) {
-    direction = 1;
+    direction = true;
   }
 }
 
