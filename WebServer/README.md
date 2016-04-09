@@ -1,7 +1,7 @@
 # WebServer
 
 ## Physical Installation
- [![]]
+ ![Alt electrical schema](https://raw.githubusercontent.com/alismed/Arduino/master/WebServer/electrical-schema.png)
 
 ### PIN Connections (Using Arduino UNO):
 
