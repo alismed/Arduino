@@ -14,4 +14,4 @@
 
 ## Library
 
- [EtherCard](https://raw.githubusercontent.com/jcw/ethercard/)
+ [EtherCard](https://github.com/jcw/ethercard/)
