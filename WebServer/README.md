@@ -3,7 +3,7 @@
  Example of WebServer using Ethernet ENC28J60 Module
 
 ## Physical Installation
- ![Alt electrical schema](./electrical-schema.png)
+<img src="./electrical-schema.png" alt="eletrical schema" width="50%" height="50%">
 
 ### PIN Connections (Using Arduino UNO):
 
