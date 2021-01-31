@@ -29,4 +29,5 @@ void servoControl(Servo servo, int potenciometerCtrlPort, int angleMin, int angl
   angleValue = map(angleValue, 0, 1023, 0, 179);  // Associa o valor do potenciômetro ao valor do ângulo
   servo.write(angleValue);                        // Comando para posicionar o servo no ângulo especificado
   delay(5);
+  
 }
